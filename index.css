@@ -1,4 +1,16 @@
-#loader {
+#wrapper {
+    width: 605px;
+    height: 605px;
+    margin: 0 auto;
+    position: relative;
+    animation: rotate 5s 0.1s infinite cubic-bezier(1,.015,.295,1.225);
+}
+
+#wrapper div {
+    display: inline-block;
+}
+
+#loader1 {
   width: 200px;
   height: 200px;
   background-color: #DCEDFF;
@@ -10,7 +22,55 @@
   animation-delay: 0.1s;
   animation-iteration-count: infinite;
   */
-  margin: 100px auto;
+  margin: 50px 50px;
+}
+
+#loader2 {
+  width: 200px;
+  height: 200px;
+  background-color: #DCEDFF;
+  animation: square-to-circle 5s 0.1s infinite cubic-bezier(1,.015,.295,1.225);
+  animation-delay: -0.2s;
+  /*
+  animation-name: square-to-circle;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(1,.01,.76,1.61);
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+  */
+  margin: 50px 50px;
+}
+
+#loader3 {
+  width: 200px;
+  height: 200px;
+  background-color: #DCEDFF;
+  animation: square-to-circle 5s 0.1s infinite cubic-bezier(1,.015,.295,1.225);
+  animation-delay: -0.4s;
+  /*
+  animation-name: square-to-circle;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(1,.01,.76,1.61);
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+  */
+  margin: 50px 50px;
+}
+
+#loader4 {
+  width: 200px;
+  height: 200px;
+  background-color: #DCEDFF;
+  animation: square-to-circle 5s 0.1s infinite cubic-bezier(1,.015,.295,1.225);
+  animation-delay: -0.6s;
+  /*
+  animation-name: square-to-circle;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(1,.01,.76,1.61);
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+  */
+  margin: 50px 50px;
 }
 
 @keyframes square-to-circle {
@@ -53,6 +113,36 @@
   100%  {
     border-radius: 0 0 0 0;
     background: #DCEDFF;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  37.5% {
+    transform: rotate(135deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5%  {
+    transform: rotate(225deg);
+  }
+  75%  {
+    transform: rotate(270deg);
+  }
+  87.5%  {
+    transform: rotate(315deg);
+  }
+  100%  {
     transform: rotate(360deg);
   }
 }
